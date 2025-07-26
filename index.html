@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<title>Univalle</title> 
-		<style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+<title>Univalle</title>
+<style>
     .linea-azul {
       width: 100%;
       height: 45px;
@@ -30,14 +31,39 @@
       padding-top: 20px; /* Suma el alto de ambas líneas */
       background-color: #f0f0f0; /* Para que se vea la línea blanca */
     }
-  </style>
+  
+    @media (max-width: 768px) {
+      #topbar td span {
+        padding: 1px 10px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      input[type="text"] {
+        width: 90%;
+        max-width: 300px;
+      }
+
+      #logo, #logo1 {
+        width: 100%;
+        height: auto;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+    </style>
 </head>
 <body>
-  <div class="encabezado">
-    <div class="linea-azul"><img src="https://www.univalle.edu.co/images/headers/gov-co.png"style="position: relative; left: 400px;"></div>
-    <div class="linea-blanca"><img id="logo" src="https://www.univalle.edu.co/images/logos/logo-univalle-80-anhos-horizontal.png"style="position: relative; left: 400px;"></div>
+<div class="encabezado">
+<div class="linea-azul"><img src="https://www.univalle.edu.co/images/headers/gov-co.png" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/></div>
+<div class="linea-blanca"><img id="logo" src="https://www.univalle.edu.co/images/logos/logo-univalle-80-anhos-horizontal.png" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/></div>
 </div>
-		<style>
+<style>
 			body {
 
 				margin: 0;
@@ -299,65 +325,58 @@
 				}
 
 		</style>
-	</head>
-	<body>
-		<script src="//cdn.webglstats.com/stat.js" defer async></script>
 
-		<script src="/js/ga.js"></script>
-
-		<div id="content">
-			<div id="content">
-			<input id="q" value="" title="Search" autocomplete="off" type="text" maxlength="2048" class="box2d"><br />
-			<span style="margin: 0px;"><button id="btnG" class="box2d">Search</button></span>
-		</div>
-
-		<table id="bottombar">
-			<tr>
-				<td class="box2d" style="width:10%"><span>&nbsp;</span></td>
-				<td class="box2d" style="width:12%"><span>&nbsp;</span></td>
-				<td class="box2d" style="width:8%"><span>&nbsp;</span></td>
-				<td class="box2d" style="width:4%"><span>&nbsp;</span></td>
-				<td class="box2d" style="width:4%"><span>&nbsp;</span></td>
-				<td class="box2d" style="width:5%"><span>&nbsp;</span></td>
-				<td class="box2d" style="width:4%"><span>&nbsp;</span></td>
-				<td class="box2d" style="width:2%"><span>&nbsp;</span></td>
-			</tr>
-		</table>
-
-		<table id="topbar">
-			<tr>
-				<td class="box2d" onClick="location.href = 'https://www.univalle.edu.co/';"><span>| Inicio |</span></td>
-				<td class="box2d selected" onClick="location.href = 'https://www.univalle.edu.co/la-universidad/acerca-de-univalle/mision';"><span>| La Universidad |</span></td>
-				<td class="box2d" onClick="location.href = 'https://www.univalle.edu.co/formacion/pregrado';"><span>| Estudia en Univalle |</span></td>
-				<td class="box2d" onClick="location.href = 'http://viceinvestigaciones.univalle.edu.co/';"><span>| Investigación |</span></td>
-				<td class="box2d" onClick="location.href = 'http://dri.univalle.edu.co/';"><span>| Internacionalización |</span></td>
-				<td class="box2d" onClick="location.href = 'https://extension.univalle.edu.co/';"><span>| Extensión y Proyección Social |</span></td>
-				<td class="box2d" onClick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSe4ARM3P3h_e_X79BkFvTIYFFUdbd2TsBs1BeuX_LaHZs0K6Q/viewform?usp=dialog&authuser=5';"><span>| Cuestionario |</span></td>
-				<td class="box2d" onClick="location.href = 'https://campusvirtual.univalle.edu.co/moodle/';"><span>| Campus Virtual |</span></td>
-				<td class="box2d" onClick="location.href = 'http://admisiones.univalle.edu.co/new/index.php';"><span>| Admisiones |</span></td>
-				<td class="box2d" onClick="location.href = 'http://biblioteca.univalle.edu.co/';"><span>| Biblioteca |</span></td>
-				<td class="box2d empty" style="width:10%"><span>&nbsp;</span></td>
-				<td class="box2d empty" style="width:20%"><span>&nbsp;</span></td>
-				<td class="box2d empty" style="width:20%"><span>&nbsp;</span></td>
-				<td class="box2d empty" style="width:10%"><span>&nbsp;</span></td>
-				<td class="box2d empty" style="width:5%"><span>&nbsp;</span></td>
-				<td class="box2d empty" style="width:5%"><span>&nbsp;</span></td>
-				<td class="box2d empty" style="width:20%"><span>&nbsp;</span></td>
-			</tr>
-		</table>
-
-		<img id="logo1" src="https://admisiones.univalle.edu.co/new/imagen/banner/banners_2023/Admisiones.webp" width="875" height="350"class="box2d"><br/>
-
-		<div id="footer">
-			<a href="http://www.google.com/intl/en/ads/" class="box2d">UNIVERSIDAD DEL VALLE</a>
-			<a href="http://www.google.com/services/" class="box2d">Ciudad Universitaria Meléndez, Calle 13 # 100-00 Cali, Valle del Cauca, Colombia </a>
-			<a href="http://www.google.com/intl/en/policies/" class="box2d">Horario de atención: Lunes a viernes, de 08:00 a.m. a 05:30 p.m.</a>
-			<a href="https://plus.google.com/116899029375914044550" class="box2d">Teléfono: +57 602 3212100</a>
-			<a href="http://www.google.com/intl/en/about.html" class="box2d">Institución de educación superior vigilada y supervisada por el Ministerio de Educación Nacional</a>
-		</div>
-
-		<!-- <script src="http://www.google.com/uds/api?file=uds.js&v=0.1" type="text/javascript"></script> -->
-		<script>
+<body>
+<script async="" defer="" src="//cdn.webglstats.com/stat.js"></script>
+<script src="/js/ga.js"></script>
+<div id="content">
+<div id="content">
+<input autocomplete="off" class="box2d" id="q" maxlength="2048" title="Search" type="text" value=""/><br/>
+<span style="margin: 0px;"><button class="box2d" id="btnG">Search</button></span>
+</div>
+<table id="bottombar">
+<tr>
+<td class="box2d" style="width:10%"><span> </span></td>
+<td class="box2d" style="width:12%"><span> </span></td>
+<td class="box2d" style="width:8%"><span> </span></td>
+<td class="box2d" style="width:4%"><span> </span></td>
+<td class="box2d" style="width:4%"><span> </span></td>
+<td class="box2d" style="width:5%"><span> </span></td>
+<td class="box2d" style="width:4%"><span> </span></td>
+<td class="box2d" style="width:2%"><span> </span></td>
+</tr>
+</table>
+<table id="topbar">
+<tr>
+<td class="box2d" onclick="location.href = 'https://www.univalle.edu.co/';"><span>| Inicio |</span></td>
+<td class="box2d selected" onclick="location.href = 'https://www.univalle.edu.co/la-universidad/acerca-de-univalle/mision';"><span>| La Universidad |</span></td>
+<td class="box2d" onclick="location.href = 'https://www.univalle.edu.co/formacion/pregrado';"><span>| Estudia en Univalle |</span></td>
+<td class="box2d" onclick="location.href = 'http://viceinvestigaciones.univalle.edu.co/';"><span>| Investigación |</span></td>
+<td class="box2d" onclick="location.href = 'http://dri.univalle.edu.co/';"><span>| Internacionalización |</span></td>
+<td class="box2d" onclick="location.href = 'https://extension.univalle.edu.co/';"><span>| Extensión y Proyección Social |</span></td>
+<td class="box2d" onclick="location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSe4ARM3P3h_e_X79BkFvTIYFFUdbd2TsBs1BeuX_LaHZs0K6Q/viewform?usp=dialog&authuser=5';"><span>| Cuestionario |</span></td>
+<td class="box2d" onclick="location.href = 'https://campusvirtual.univalle.edu.co/moodle/';"><span>| Campus Virtual |</span></td>
+<td class="box2d" onclick="location.href = 'http://admisiones.univalle.edu.co/new/index.php';"><span>| Admisiones |</span></td>
+<td class="box2d" onclick="location.href = 'http://biblioteca.univalle.edu.co/';"><span>| Biblioteca |</span></td>
+<td class="box2d empty" style="width:10%"><span> </span></td>
+<td class="box2d empty" style="width:20%"><span> </span></td>
+<td class="box2d empty" style="width:20%"><span> </span></td>
+<td class="box2d empty" style="width:10%"><span> </span></td>
+<td class="box2d empty" style="width:5%"><span> </span></td>
+<td class="box2d empty" style="width:5%"><span> </span></td>
+<td class="box2d empty" style="width:20%"><span> </span></td>
+</tr>
+</table>
+<img class="box2d" height="350" id="logo1" src="https://admisiones.univalle.edu.co/new/imagen/banner/banners_2023/Admisiones.webp" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" width="875"/><br/>
+<div id="footer">
+<a class="box2d" href="http://www.google.com/intl/en/ads/">UNIVERSIDAD DEL VALLE</a>
+<a class="box2d" href="http://www.google.com/services/">Ciudad Universitaria Meléndez, Calle 13 # 100-00 Cali, Valle del Cauca, Colombia </a>
+<a class="box2d" href="http://www.google.com/intl/en/policies/">Horario de atención: Lunes a viernes, de 08:00 a.m. a 05:30 p.m.</a>
+<a class="box2d" href="https://plus.google.com/116899029375914044550">Teléfono: +57 602 3212100</a>
+<a class="box2d" href="http://www.google.com/intl/en/about.html">Institución de educación superior vigilada y supervisada por el Ministerio de Educación Nacional</a>
+</div>
+<!-- <script src="http://www.google.com/uds/api?file=uds.js&v=0.1" type="text/javascript"></script> -->
+<script>
 
 			/* Based on Alex Arnell's inheritance implementation. */
 			var Class = {
@@ -538,7 +557,7 @@
 			}
 
 		</script>
-		<script>
+<script>
 
 			/* 
 			 * Box2Djs (port of Box2DFlash 1.4.3.1) - http://box2d-js.sourceforge.net/
@@ -1579,7 +1598,7 @@
 			{this.type=b2Joint.e_unknownJoint;this.userData=null;this.body1=null;this.body2=null;this.collideConnected=false;this.type=b2Joint.e_revoluteJoint;this.anchorPoint=new b2Vec2(0.0,0.0);this.lowerAngle=0.0;this.upperAngle=0.0;this.motorTorque=0.0;this.motorSpeed=0.0;this.enableLimit=false;this.enableMotor=false;},anchorPoint:null,lowerAngle:null,upperAngle:null,motorTorque:null,motorSpeed:null,enableLimit:null,enableMotor:null});
 
 		</script>
-		<script>
+<script>
 
 			var delta = [ 0, 0 ];
 			var stage = [ window.screenX, window.screenY, window.innerWidth, window.innerHeight ];
@@ -2198,6 +2217,6 @@
 			}
 
 		</script>
+</div></body>
+</body></html>
 
-	</body>
-</html>
