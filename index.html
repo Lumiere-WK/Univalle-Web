@@ -32,36 +32,24 @@
       background-color: #f0f0f0; /* Para que se vea la línea blanca */
     }
   
+    /* Estilo por defecto (pantallas grandes): alineado a la izquierda */
+    .linea-azul-img, .linea-blanca-img {
+        display: block;
+        margin-left: 0;
+    }
+
+    /* En móviles: centrar */
     @media (max-width: 768px) {
-      #topbar td span {
-        padding: 1px 10px;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      input[type="text"] {
-        width: 90%;
-        max-width: 300px;
-      }
-
-      #logo, #logo1 {
-        width: 100%;
-        height: auto;
-      }
-
-      button {
-        width: 100%;
-      }
+        .linea-azul-img, .linea-blanca-img {
+            margin: 0 auto;
+        }
     }
     </style>
 </head>
 <body>
 <div class="encabezado">
-<div class="linea-azul"><img src="https://www.univalle.edu.co/images/headers/gov-co.png" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/></div>
-<div class="linea-blanca"><img id="logo" src="https://www.univalle.edu.co/images/logos/logo-univalle-80-anhos-horizontal.png" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/></div>
+<div class="linea-azul"><img class="linea-azul-img" src="https://www.univalle.edu.co/images/headers/gov-co.png" style=""/></div>
+<div class="linea-blanca"><img class="linea-blanca-img" id="logo" src="https://www.univalle.edu.co/images/logos/logo-univalle-80-anhos-horizontal.png" style=""/></div>
 </div>
 <style>
 			body {
@@ -367,7 +355,7 @@
 <td class="box2d empty" style="width:20%"><span> </span></td>
 </tr>
 </table>
-<img class="box2d" height="350" id="logo1" src="https://admisiones.univalle.edu.co/new/imagen/banner/banners_2023/Admisiones.webp" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" width="875"/><br/>
+<img class="box2d" height="350" id="logo1" src="https://admisiones.univalle.edu.co/new/imagen/banner/banners_2023/Admisiones.webp" width="875"/><br/>
 <div id="footer">
 <a class="box2d" href="http://www.google.com/intl/en/ads/">UNIVERSIDAD DEL VALLE</a>
 <a class="box2d" href="http://www.google.com/services/">Ciudad Universitaria Meléndez, Calle 13 # 100-00 Cali, Valle del Cauca, Colombia </a>
